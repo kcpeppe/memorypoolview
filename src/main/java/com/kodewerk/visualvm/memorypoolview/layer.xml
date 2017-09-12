@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2011-2013, Kirk Pepperdine.
+  ~
+  ~ The contents of this file are subject to the terms of the
+  ~ Common Development and Distribution License (the "License").
+  ~ You may not use this file except in compliance with the License.
+  ~
+  ~ You can obtain a copy of the license at http://www.opensource.org/licenses/CDDL-1.0.
+  ~ See the License for the specific language governing permissions
+  ~ and limitations under the License.
+  ~
+  ~ When distributing Covered Code, include this CDDL HEADER in each
+  ~ file and include the License file.
+  ~ If applicable, add the following below this CDDL HEADER, with the
+  ~ fields enclosed by brackets "[]" replaced with your own identifying
+  ~ information: Portions Copyright [yyyy] [name of copyright owner]
+  -->
+
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem/>
