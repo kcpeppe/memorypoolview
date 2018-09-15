@@ -28,7 +28,7 @@ import java.util.Set;
 public class GCView extends DataSourceView {
 
     private final static ObjectName GARBAGE_COLLECTOR_WILDCARD_PATTERN = createGarbageCollectorWilcardPattern();
-    private static final String IMAGE_PATH = "com/kodewerk/visualvm/memorypoolview/resources/bin.png";
+    private static final String IMAGE_PATH = "com/kodewerk/visualvm/memorypoolview/bin.png";
 
     private final Set<GarbageCollectionModel> garbageCollectorModels = new HashSet<GarbageCollectionModel>();
     private DataViewComponent dvc;
