@@ -1,0 +1,97 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>memorypoolview</artifactId>
+	<groupId>com.kodewerk.visualvm</groupId>
+	<packaging>nbm</packaging>
+	<version>1.0.0</version>
+
+	<properties>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.sun.tools.visualvm.api</groupId>
+			<artifactId>com-sun-tools-visualvm-tools</artifactId>
+			<version>RELEASE135</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.tools.visualvm.api</groupId>
+			<artifactId>com-sun-tools-visualvm-charts</artifactId>
+			<version>RELEASE135</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.tools.visualvm.api</groupId>
+			<artifactId>com-sun-tools-visualvm-core</artifactId>
+			<version>RELEASE135</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.tools.visualvm.api</groupId>
+			<artifactId>com-sun-tools-visualvm-application</artifactId>
+			<version>RELEASE135</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.tools.visualvm.api</groupId>
+			<artifactId>org-openide-util</artifactId>
+			<version>RELEASE135</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.tools.visualvm.api</groupId>
+			<artifactId>org-openide-modules</artifactId>
+			<version>RELEASE135</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>netbeans</id>
+			<url>http://bits.netbeans.org/nexus/content/groups/netbeans/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>visualvm</id>
+			<url>http://bits.netbeans.org/nexus/content/groups/visualvm/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>nbm-maven-plugin</artifactId>
+				<version>4.1</version>
+				<extensions>true</extensions>
+				<configuration>
+					<author>Kirk Pepperdine</author>
+					<licenseFile>src/main/resources/com/kodewerk/visualvm/memorypoolview/license.txt</licenseFile>
+					<licenseName>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0</licenseName>
+					<sourceManifestFile>src/main/nbm/manifest.mf</sourceManifestFile>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+					<archive>
+						<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

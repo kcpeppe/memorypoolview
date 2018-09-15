@@ -39,7 +39,7 @@ import java.util.ArrayList;
 class MemoryPoolView extends DataSourceView {
 
     private final static ObjectName MEMORY_POOL_WILDCARD_PATTERN = createMemoryPoolWilcardPattern();
-    private static final String IMAGE_PATH = "com/kodewerk/visualvm/memorypoolviews/resources/memory.png";
+    private static final String IMAGE_PATH = "com/kodewerk/visualvm/memorypoolview/memory.png";
 
     private final ArrayList<MemoryPoolModel> memoryPoolModels = new ArrayList<MemoryPoolModel>();
     private DataViewComponent dvc;
